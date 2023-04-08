@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+    <rdf:Description rdf:ID="Product">
+        <rdfs:label>Product</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:ID="Smartphone">
+        <rdfs:label>Smartphone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Product"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:ID="TV">
+        <rdfs:label>TV</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Product"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:ID="Washing_machine">
+        <rdfs:label>Washing_machine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Product"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:ID="Refrigerator">
+        <rdfs:label>Refrigerator</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Product"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:ID="Laptop">
+        <rdfs:label>Laptop</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Product"/>
+    </rdf:Description>
+
+
+
+    <rdfs:Property rdf:ID="rating">
+        <rdfs:label>Rating</rdfs:label>
+        <rdfs:domain rdf:resource="#Product"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2001/XMLSchema#deciaml"/>
+    </rdfs:Property>
+
+    <rdfs:Property rdf:ID="review_count">
+        <rdfs:label>Review_count</rdfs:label>
+        <rdfs:domain rdf:resource="#Product"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdfs:Property>
+
+    <rdfs:Property rdf:ID="price_new">
+        <rdfs:label>Price_new</rdfs:label>
+        <rdfs:domain rdf:resource="#Product"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2001/XMLSchema#deciaml"/>
+    </rdfs:Property>
+
+    <rdfs:Property rdf:ID="price_old">
+        <rdfs:label>Price_old</rdfs:label>
+        <rdfs:domain rdf:resource="#Product"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2001/XMLSchema#deciaml"/>
+    </rdfs:Property>
+
+    <rdfs:Property rdf:ID="currency">
+        <rdfs:label>Currency</rdfs:label>
+        <rdfs:domain rdf:resource="#Product"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdfs:Property>
+
+    <rdfs:Property rdf:ID="discount">
+        <rdfs:label>Discount</rdfs:label>
+        <rdfs:domain rdf:resource="#Product"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdfs:Property>
+
+</rdf:RDF>
